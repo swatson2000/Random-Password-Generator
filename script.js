@@ -17,13 +17,13 @@ function generatePassword() {
     password += allChar.charAt(randomIndex);
   }
  
-  
+  //write password
   document.getElementById("password").value = password;
 }
-
+//apply to buttons
 function copyPassword() {
   console.log("btn was clicked");
   var passwordInput = document.getElementById("password");
   passwordInput.select();
-  document.execCommand("copy");
+  document.execCommand("copy"); // copy element
 }
